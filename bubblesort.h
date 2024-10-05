@@ -2,5 +2,5 @@
 
 #ifndef bubble
 #define bubble
-void BubbleSort(char Array[][100], int rows);
+void BubbleSort(char* Array, int rows);
 #endif

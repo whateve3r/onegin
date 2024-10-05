@@ -7,11 +7,20 @@ int main()
 
     int count = 0;
 
-    char Text[100][100];
+    fseek(onegin, 0, SEEK_END);
+    size_t size = (size_t)ftell(onegin);
+    rewind(onegin);
 
-    while (fgets(Text[count], sizeof(Text[count]), onegin))
+    char* Text = (char*)calloc(size, sizeof(char));
+
+    fgets(Text, size, onegin);
+
+    for (size_t k = 0; k < size; k++)
     {
-        count++;
+        if (Text[k] == '\n' || Text[k] == '\0')
+        {
+            count++;
+        }
     }
 
     fclose(onegin);
@@ -20,6 +29,9 @@ int main()
 
     for (int i = 0; i < count; i++)
     {
-        printf("%s", Text[i]);
+        printf("%s", &Text[i]);
     }
+
+    free(Text);
 }
+

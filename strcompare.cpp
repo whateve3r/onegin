@@ -1,6 +1,6 @@
 #include "strcompare.h"
 
-int StrCompare(const char* str1, const char* str2)
+int StrCompare(char* str1, char* str2)
 {
     while (*str1 != '\0' && *str2 != '\0')
     {
