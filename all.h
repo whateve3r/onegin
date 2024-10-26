@@ -1,0 +1,8 @@
+#include "filesize.h"
+#include "strcompare.h"
+#include "bubblesort.h"
+#include "PrintString.h"
+#include "QuantityOfStrings.h"
+#include "SetPointers.h"
+#include "ReadingFile.h"
+#include "SizeOfFile.h"
