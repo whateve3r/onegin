@@ -6,3 +6,4 @@
 #include "SetPointers.h"
 #include "ReadingFile.h"
 #include "SizeOfFile.h"
+#include "struct.h"
