@@ -1,4 +1,5 @@
-#include "strcompare.h"
+#include "../mstrcmp/strcompare.h"
+#include "../mstrcmp/reversecmp.h"
 
 #ifndef bubble
 #define bubble

@@ -1,7 +1,7 @@
-#include "ReadingFile.h"
-#include "SizeOfFile.h"
-#include "QuantityOfStrings.h"
-#include "SetPointers.h"
+#include "../text/QuantityOfStrings.h"
+#include "../text/SetPointers.h"
+#include "../file/ReadingFile.h"
+#include "../file/SizeOfFile.h"
 
 struct String
 {

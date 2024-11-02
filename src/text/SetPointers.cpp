@@ -8,7 +8,7 @@ char** SetPointers(char* Text, size_t size, size_t count)
     size_t StrNum = 1;
     for (size_t i = 0; i < size; i++)
     {
-        if (Text[i] == '\n')                             // func
+        if (Text[i] == '\n')
         {
             Text[i] = '\0';
 
