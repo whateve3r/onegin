@@ -3,5 +3,5 @@
 
 #ifndef bubble
 #define bubble
-void BubbleSort(char** Array, size_t rows);
+void BubbleSort(char** Array, size_t rows, int (*CmpFunc)(char* str1, char* str2));
 #endif
