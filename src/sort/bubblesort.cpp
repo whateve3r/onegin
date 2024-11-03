@@ -2,7 +2,8 @@
 
 void BubbleSort(char** Array, size_t rows, int (*CmpFunc)(const char* str1, const char* str2))
 {
-    assert(Array != NULL && CmpFunc != NULL);
+    assert(Array != NULL);
+    assert(CmpFunc != NULL);
 
     for (size_t i = 0; i < rows - 1; i++)
     {
