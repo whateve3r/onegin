@@ -2,8 +2,10 @@
 
 char* ReadingFile(const char* fname)
 {
-    FILE *filestream = fopen(fname, "r");
+    assert(fname != NULL);
 
+    FILE *filestream = fopen(fname, "r");
+                                                // size = fread; в винде пиздец будет
     size_t size = filesize(filestream);
 
     char* Text = (char*)calloc(size + 1, sizeof(char));

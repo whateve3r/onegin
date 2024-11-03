@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <assert.h>
+
 #ifndef reverse
 #define reverse
-int ReverseCmp(char* str1, char* str2);
+int ReverseCmp(const char* str1, const char* str2);
 #endif

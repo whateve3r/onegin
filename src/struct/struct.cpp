@@ -1,16 +1,19 @@
 #include "struct.h"
 
-struct String StringsFromFile()
+struct String StringsFromFile(const char* fname)
 {
-    struct String text;
+    assert(fname != NULL);
 
-    text.Text = ReadingFile("onegin.txt");
+    struct String text
+    {
+    text.Text = ReadingFile(fname),
 
-    text.size = SizeOfFile("onegin.txt");
+    text.size = SizeOfFile(fname),
 
-    text.count = QuantityOfStrings(text.Text, text.size);
+    text.count = QuantityOfStrings(text.Text, text.size),
 
-    text.line = SetPointers(text.Text, text.size, text.count);
+    text.line = SetPointers(text.Text, text.size, text.count),
+    };
 
     return text;
 }

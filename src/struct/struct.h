@@ -6,15 +6,16 @@
 struct String
 {
     char* Text;
-    char** line;
 
     size_t size;
     size_t count;
+
+    char** line;
 };
 
 #ifndef struct
 #define struct
-struct String StringsFromFile();
+struct String StringsFromFile(const char* fname);
 #endif
 
 

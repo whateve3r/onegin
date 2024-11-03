@@ -2,6 +2,8 @@
 
 char** SetPointers(char* Text, size_t size, size_t count)
 {
+    assert(Text != NULL);
+
     char** line = (char**)calloc(count, sizeof(char*));
 
     line[0] = Text;
