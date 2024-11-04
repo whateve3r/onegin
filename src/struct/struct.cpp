@@ -10,7 +10,7 @@ struct String StringsFromFile(const char* fname)
 
     text.size = SizeOfFile(fname),
 
-    text.count = QuantityOfStrings(text.Text, text.size),
+    text.count = QuantityOfStrings(text.Text, text.size, '\n'),
 
     text.line = SetPointers(text.Text, text.size, text.count),
     };

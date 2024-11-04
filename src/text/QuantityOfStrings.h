@@ -3,5 +3,5 @@
 
 #ifndef quantity
 #define quantity
-size_t QuantityOfStrings(char * array, size_t size);
+size_t QuantityOfStrings(char * array, size_t size, int symbol);
 #endif

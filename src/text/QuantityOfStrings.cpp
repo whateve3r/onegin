@@ -1,6 +1,6 @@
 #include "QuantityOfStrings.h"
 
-size_t QuantityOfStrings(char * array, size_t size)
+size_t QuantityOfStrings(char * array, size_t size, int symbol)
 {
     assert(array != NULL);
 
@@ -8,9 +8,20 @@ size_t QuantityOfStrings(char * array, size_t size)
 
     for (size_t i = 0; i < size; i++)
     {
-        if (array[i] == '\n' || array[i] == '\0')
+        if (symbol == '\n')
         {
-            count++;
+            if (array[i] == '\n' || array[i] == '\0')
+            {
+                count++;
+            }
+        }
+
+        else
+        {
+            if (array[i] == symbol)
+            {
+                count++;
+            }
         }
     }
 
